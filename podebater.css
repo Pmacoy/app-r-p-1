@@ -1,0 +1,140 @@
+/* reset de margens */
+* {
+    margin: 0;
+    padding:0;
+}
+
+@font-face{
+    font-family: NossasFontes;
+    src: url(Fontes/GothamRnd-BoldIta.otf);
+}
+
+.menu{
+    background-color: #2D2926;
+    border: 5px solid #2D2926;
+    overflow: hidden;
+    margin: auto;    
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li{
+    font-family: NossasFontes;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 20px;     
+}
+
+.menu li a{
+    font-size: 20px;
+    color: #da291c;
+    display: block;
+    padding: 5px 15px;
+    padding-right: 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #FFBF3F;
+}
+
+.menu li a:hover {
+    color: #fff;
+    background: #da291c;
+    text-shadow: 0 0 5px #fff;
+    -moz-box-shadow: 0 3px 10px 0 #ccc;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+}
+    
+
+.menu2{
+    background-color: #2D2926;
+    border-top: 2px solid white;    
+ }
+
+ .logo{
+    margin-top: 0.5%;
+ }
+
+ .img1{
+    display: inline;
+    float: right;
+    padding: 0px 10px;
+    margin-top: 1.1%;    
+ }
+
+ .img2{
+    display: inline;
+    float: right;
+    padding: 0px 10px;
+    margin-top: 1.1%;
+    
+ }
+
+ .img3{
+    display: inline;
+    float: right;
+    padding: 0px 10px;
+    margin-top: 1.1%;   
+ }
+ 
+ @media screen and (max-width: 500px){
+    .logo{
+        float: none;
+    }
+
+    .menu li{
+        float: none;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+
+#fundo-externo {
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    height: 100%;
+    position: fixed; /* criamos um contexto para posicionamento */
+     
+}
+
+#fundo {
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+    padding: 200px 0px;
+     
+}
+
+#fundo img {
+    width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+    position: absolute;
+}
+
+#site {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    width: 560px;
+    padding: 20px;
+    margin-left: -300px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+    background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(255,255,255,0.8); /* fundo branco com um pouco de transparência */
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+#borda_texto {
+    text-shadow: 2px 2px red;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Tahoma, sans-serif;
+    color: #3F2021;
+    padding: 10px;
+    margin-bottom: 50px;
+    }
